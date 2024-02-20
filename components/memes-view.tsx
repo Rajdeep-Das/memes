@@ -22,7 +22,6 @@ export function MemesView({ imgURL }: { imgURL: string }) {
           height="200"
           src={imgURL}
           width="400"
-          layout="cover"
           sizes="(max-height: 168px)"
         />
       </CardContent>
