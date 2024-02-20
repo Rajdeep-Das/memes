@@ -16,7 +16,7 @@ export function MemesView({ imgURL }: { imgURL: string }) {
   return (
     <Card className="w-full max-w-xl">
       <CardContent className="p-4 flex items-center justify-center">
-        <Image
+        <img
           alt="Meme"
           className="rounded-lg"
           height="200"
