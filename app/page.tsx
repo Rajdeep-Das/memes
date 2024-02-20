@@ -1,4 +1,4 @@
-"client";
+"use client";
 
 import { MemesView } from "@/components/memes-view";
 import MemesDB from "@/public/memes.json";
@@ -14,7 +14,6 @@ export default function Home() {
       <MemesView
         imgURL={`${"/" + getRandomElement(MemesDB).path}?${timeStamp}`}
       />
-      {JSON.stringify(getRandomElement(MemesDB).path)}
     </main>
   );
 }
