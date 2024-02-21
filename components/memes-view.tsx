@@ -1,3 +1,4 @@
+"use client";
 /**
  * @see https://v0.dev/t/q2SbxgUldPn
  */
@@ -9,13 +10,13 @@ import {
   Card,
 } from "@/components/ui/card";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import ShareButton from "./ui/sharebutton";
 
 export function MemesView({ imgURL }: { imgURL: string }) {
   return (
     <Card className="w-full max-w-xl">
       <CardContent className="p-4 flex items-center justify-center">
-        <img
+        <Image
           alt="Meme"
           className="rounded-lg"
           height="200"
@@ -31,15 +32,15 @@ export function MemesView({ imgURL }: { imgURL: string }) {
             Monday mornings be like
           </CardDescription>
         </div>
-        <Button className="w-8 h-8 md:hidden" size="icon" variant="ghost">
-          Get Random Meme
-        </Button>
-      </CardFooter>
+      */}
+
       <CardFooter className="flex justify-center hidden md:flex">
-        <Button className="w-8 h-8" size="icon" variant="ghost">
-          Get Random Meme
-        </Button>
-      </CardFooter> */}
+        <ShareButton
+          title="Dev memes"
+          url={imgURL}
+          text="Check out this meme"
+        />
+      </CardFooter>
     </Card>
   );
 }
