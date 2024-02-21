@@ -23,6 +23,9 @@ export function MemesView({ imgURL }: { imgURL: string }) {
           src={imgURL}
           width="400"
           sizes="(max-height: 168px)"
+          placeholder="blur"
+          blurDataURL="/placeholder.svg"
+          priority
         />
       </CardContent>
       {/* <CardFooter className="flex flex-col md:flex-row justify-between">
