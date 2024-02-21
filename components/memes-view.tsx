@@ -34,7 +34,7 @@ export function MemesView({ imgURL }: { imgURL: string }) {
         </div>
       */}
 
-      <CardFooter className="flex justify-center hidden md:flex">
+      <CardFooter className="flex justify-center md:flex">
         <ShareButton
           title="Dev memes"
           url={imgURL}
