@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   description: "Developers Memes | Rajdeep",
 };
 
+export const revalidate = 1;
+
 export default function RootLayout({
   children,
 }: Readonly<{

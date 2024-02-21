@@ -1,5 +1,3 @@
-"use client";
-
 import { MemesView } from "@/components/memes-view";
 import MemesDB from "@/public/memes.json";
 
