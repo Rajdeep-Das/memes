@@ -11,8 +11,11 @@ import {
 } from "@/components/ui/card";
 import Image from "next/image";
 import ShareButton from "./ui/sharebutton";
+import { useRouter } from "next/navigation";
+import { Button } from "./ui/button";
 
 export function MemesView({ imgURL }: { imgURL: string }) {
+  const router = useRouter();
   return (
     <Card className="w-full max-w-xl">
       <CardContent className="p-4 flex items-center justify-center">
@@ -37,12 +40,13 @@ export function MemesView({ imgURL }: { imgURL: string }) {
         </div>
       */}
 
-      <CardFooter className="flex justify-center md:flex">
+      <CardFooter className="flex justify-center md:flex gap-2">
         <ShareButton
           title="Dev memes"
           url={imgURL}
           text="Check out this meme"
         />
+        <Button onClick={() => router.refresh()}>Refresh</Button>
       </CardFooter>
     </Card>
   );
